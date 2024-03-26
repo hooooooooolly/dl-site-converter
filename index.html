@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <title>DL用語に変換Siteね</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/list.css">
+  <script type="text/javascript" src="./js/main.js"></script>
+</head>
+
+<body>
+  <!-- header -->
+  <header>
+    <h1>DL用語に変換Siteね</h1>
+  </header>
+  <!-- header -->
+  <div class="container">
+    <div class="starter-template">
+      <!-- main -->
+ 　   <article>
+ 　     <div class="row">
+          <div class="h2">注意事項</div>
+          <div class="col">あれやこれやとは一切関係ありません。</div>
+        </div>
+ 　   </article>
+      <hr>
+      <article>
+        <div class="row">
+          <div class="h3">入力</div>
+          <textarea id="befGen"></textarea>
+        </div>
+        <div class="row">
+          <input type="button" class="genBtn" value="変換" onclick="genTxt()">
+        </div>
+        <div class="row">
+          <h3>出力</h3>
+          <textarea id="aftGen" readonly></textarea>
+        </div>
+      </article>
+      <hr>
+      <h2>変換一覧表</h2>
+      <table>
+        <thead>
+          <tr>
+            <td class="title">変換前</td>
+            <td class="title">変換後</td>
+          </tr>
+        </thead>
+        <tbody id="column"></tbody>
+      </table>
+      <!-- main -->
+    </div>
+  </div>
+</body>
+
+</html>
